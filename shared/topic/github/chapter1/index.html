@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/black.css">
+  </head>
+  <body>
+
+    <script type="module">
+        import Reveal from 'reveal.js';
+        import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js';
+
+        let deck = new Reveal({
+           plugins: [ Markdown ]
+        })
+        deck.initialize();
+
+    </script>
+
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown>
+              <textarea data-template>
+                ## Slide 1
+                A paragraph with some text and a [link](http://hakim.se).
+                ---
+                ## Slide 2
+                ---
+                ## Slide 3
+              </textarea>
+            </section>
+        </div>
+    </div>
+  </body>
+</html>
